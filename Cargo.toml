@@ -1,0 +1,25 @@
+[workspace]
+members = [
+    "tokio-example",
+    "async-std-example",
+    "const-function",
+    "any-example",
+    "enum-example",
+    "match-example",
+    "enum-strum-example",
+    "pin-example",
+    "unsafe-example",
+    "pattern-matching-example",
+    "recursion-example",
+    "trait-example",
+    "smart-pointer-example",
+    "memory-example",
+    "regex-example",
+    "generic-example",
+    "lifetime-example",
+    "join-example",
+    "pointers-example",
+    "ownership-example",
+    "tests_example", "lib-example", "using-lib-example", "complex-trait-example", "error-example", "anyhow-example", "mutable-example", "stream-example", "macro-example", "derive-macro-example", "macro-lib-example",
+]
+resolver = "2"

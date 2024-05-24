@@ -1,0 +1,8 @@
+[package]
+name = "enum-strum-example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+strum_macros = "0.26.2"
+strum = "0.26.2"
