@@ -1,6 +1,8 @@
 # rust-fortgeschrittene
 Schulungsunterlagen für den Kurs "Rust für Fortgeschrittene"
 
+Folien: https://docs.google.com/presentation/d/1jYxIx7Auf4o4TjKg54ped66MMc1mGqGYoHo6nxW_qfA/edit?usp=sharing
+
 
 # Vorbereitungen am Tag 1
 ```
