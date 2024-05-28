@@ -4,12 +4,25 @@ pub fn add(a: i32, b: i32) -> i32 {
     a + b
 }
 
+
+/// Multiply two integers
+///
+/// # Examples
+///
+/// ```
+/// // You can have rust code between fences inside the comments
+/// // If you pass --test to `rustdoc`, it will even test it for you!
+/// # use tests_example::multiply;
+/// let result = multiply(1,2);
+/// println!("1 times 2 is {}", result);
+/// assert_eq!(result, 2);
+/// ```
 pub fn multiply(a: i32, b: i32) -> i32 {
     a * b
 }
 
 #[cfg(test)]
-mod tests {
+mod foo_tests {
     use super::*;
 
     #[test]

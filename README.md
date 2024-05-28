@@ -4,12 +4,18 @@ Schulungsunterlagen für den Kurs "Rust für Fortgeschrittene"
 Folien: https://docs.google.com/presentation/d/1jYxIx7Auf4o4TjKg54ped66MMc1mGqGYoHo6nxW_qfA/edit?usp=sharing
 
 
+https://prod.liveshare.vsengsaas.visualstudio.com/join?D85FFF8C31AD8F49FA49E94D9ABF4030F462
+
+# learn
+embassy
+rtfm
+
 # Vorbereitungen am Tag 1
 ```
 # installieren/updaten von rust mit rustup
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-#für manche Beispiele Brauchen wir nightly features
+#für manche Beispiele Brauchen wir nightly features 
 rustup toolchain install nightly
 rustup default nightly
 rustup component add clippy # bester rust linter

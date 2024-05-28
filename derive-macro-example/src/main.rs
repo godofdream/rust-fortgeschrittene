@@ -4,13 +4,25 @@ use serde::{Deserialize, Serialize};
 struct Person {
     name: String,
     age: u32,
+    adress: Adress,
 }
+
+#[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Serialize, Deserialize)]
+struct Adress {
+    street: String,
+    city: String,
+}
+
 
 fn main() {
     // Create a new Person instance
     let person1 = Person {
         name: String::from("Alice"),
         age: 30,
+        adress: Adress {
+            street: String::from("123 Main Street"),
+            city: String::from("Springfield"),
+        },
     };
 
     // Debug print
@@ -22,6 +34,18 @@ fn main() {
 
     // Compare instances
     println!("Are they equal? {}", person1 == person2);
+
+    let mut adresses = vec![
+        Adress {
+            street: String::from("123 Main Street"),
+            city: String::from("Springfield"),
+        },
+        Adress {
+            street: String::from("12asd3 Main Street"),
+            city: String::from("Spradfingfield"),
+        },
+    ];
+    adresses.sort();
 
     // Serialize to JSON
     let json_str = serde_json::to_string(&person1).unwrap();

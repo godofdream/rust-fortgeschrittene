@@ -9,26 +9,34 @@ fn recursive_fibonacci(n: u128) -> u128 {
     }
 }
 
-fn iterative_fibonacci(n: u32) -> u32 {
+fn iterative_fibonacci(n: u128) -> u128 {
     if n == 0 {
-        return 1;
+        return 0;
     }
     if n == 1 {
-        return 3;
+        return 1;
     }
-    let mut grandparent = 1;
-    let mut parent = 3;
-    let mut me = 0;
-    for _i in 2..=n {
-        me = 3 * parent - grandparent;
-        grandparent = parent;
-        parent = me;
-    }
-    me
+        //use loop
+        let mut previousprevious_number = 0;
+        let mut previous_number = 0;
+        let mut current_number = 1;
+
+        for _i in 1..n {
+
+            previousprevious_number = previous_number;
+
+            previous_number = current_number;
+
+            current_number = previousprevious_number + previous_number;
+
+        }
+        current_number
 }
 
 fn main() {
-    let n = 50; // Calculate the 10th Fibonacci number
+    let n = 10; // Calculate the 10th Fibonacci number
     let result = iterative_fibonacci(n);
     println!("The {}th Fibonacci number is: {}", n, result);
+    let result2 = recursive_fibonacci(n);
+    println!("The {}th Fibonacci number is: {}", n, result2);
 }

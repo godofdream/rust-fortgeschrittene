@@ -18,18 +18,11 @@ macro_rules! generate_getters_setters {
             )*
         }
 
-
-
-
-
         impl $struct_name {
             // Generate a hello method for the struct
             pub fn hello(&self) {
                 println!("Hello, I'm {}!", self.name);
             }
-
-
-
         }
     }
 }

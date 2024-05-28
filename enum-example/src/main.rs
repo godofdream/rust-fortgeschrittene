@@ -30,7 +30,7 @@ impl std::str::FromStr for Color {
     }
 }
 
-fn main() {
+fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
     // Convert enum to string
     let red = Color::Red;
     let red_str = red.to_string();
@@ -38,10 +38,9 @@ fn main() {
 
     // Convert string to enum
     let green_str = "Green";
-    match green_str.parse::<Color>() {
-        Ok(color) => println!("String to enum: {:?}", color),
-        Err(_) => println!("Failed to convert string to enum"),
-    }
+    let color: Color = green_str.parse()?;
+    
+    println!("String to enum: {:?}", color);
 
     // Demonstrate handling an invalid string conversion
     let invalid_str = "Yellow";
@@ -49,4 +48,5 @@ fn main() {
         Ok(color) => println!("String to enum: {:?}", color),
         Err(_) => println!("Failed to convert string to enum"),
     }
+    Ok(())
 }
