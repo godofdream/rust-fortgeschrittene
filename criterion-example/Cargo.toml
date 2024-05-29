@@ -16,3 +16,9 @@ criterion = { version = "0.4", features = ["html_reports"] }
 [[bench]]
 name = "my_benchmark"
 harness = false# required for criterion
+
+
+# required for criterion
+[[bench]]
+name = "fibonacci_benchmark"
+harness = false# required for criterion
