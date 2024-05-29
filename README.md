@@ -4,7 +4,16 @@ Schulungsunterlagen für den Kurs "Rust für Fortgeschrittene"
 Folien: https://docs.google.com/presentation/d/1jYxIx7Auf4o4TjKg54ped66MMc1mGqGYoHo6nxW_qfA/edit?usp=sharing
 
 
-https://prod.liveshare.vsengsaas.visualstudio.com/join?D85FFF8C31AD8F49FA49E94D9ABF4030F462
+# empfehlungen
+[Rust Performance book](https://nnethercote.github.io/perf-book/build-configuration.html)
+
+
+ideas for tomorrow:
+cargo bench 
+criterion
+how to work around inheritation
+- traits that
+
 
 # learn
 embassy

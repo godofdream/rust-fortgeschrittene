@@ -1,3 +1,4 @@
+#![clippy::pendantic]
 use tokio::fs::File;
 use tokio::io::{self, AsyncReadExt, AsyncWriteExt};
 use tokio_stream::StreamExt;

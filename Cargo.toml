@@ -20,6 +20,8 @@ members = [
     "join-example",
     "pointers-example",
     "ownership-example",
-    "tests_example", "lib-example", "using-lib-example", "complex-trait-example", "error-example", "anyhow-example", "mutable-example", "stream-example", "macro-example", "derive-macro-example", "macro-lib-example", "task-tokio", "embedded-example",
+    "embedded-example_blink",
+    "criterion-example",
+    "tests_example", "lib-example", "using-lib-example", "complex-trait-example", "error-example", "anyhow-example", "mutable-example", "stream-example", "macro-example", "derive-macro-example", "macro-lib-example", "task-tokio", "embedded-example", "bench-example",
 ]
 resolver = "2"
