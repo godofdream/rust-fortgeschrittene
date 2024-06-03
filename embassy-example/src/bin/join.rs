@@ -29,7 +29,7 @@ async fn main(_spawner: Spawner) {
     info!("Press the USER button...");
 
     loop {
-        let (tx,rx) = channel::Channel::new();
+        //let (tx,rx) = channel::Channel::new();
         let res = select(
             button_handler(&mut button,&mut led1), 
             button_handler(&mut button2, &mut led2)).await;
