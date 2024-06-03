@@ -29,7 +29,7 @@ fn main() {
     // any file in the project changes. By specifying `memory.x`
     // here, we ensure the build script is only re-run when
     // `memory.x` is changed.
-    println!("cargo:rerun-if-changed=memory.x");
+    //println!("cargo:rerun-if-changed=memory.x");
 
     // Specify linker arguments.
 
@@ -40,4 +40,6 @@ fn main() {
 
     // Set the linker script to the one provided by cortex-m-rt.
     println!("cargo:rustc-link-arg=-Tlink.x");
+
+    println!("cargo:rustc-link-arg-bins=-Tdefmt.x");
 }
